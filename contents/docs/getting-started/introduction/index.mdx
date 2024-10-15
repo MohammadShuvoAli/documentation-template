@@ -60,45 +60,47 @@ Feel free to use blockquotes to highlight important information or quotes releva
 
 Here a custom tab component from shadcn ui is used.
 
-<Tabs defaultValue="js" className="pt-5 pb-1">
-  <TabsList className="">
+<Tabs defaultValue="python" className="pt-5 pb-1">
+  <TabsList>
     <TabsTrigger value="python">Python</TabsTrigger>
     <TabsTrigger value="php">PHP</TabsTrigger>
   </TabsList>
+  
   <TabsContent value="python">
-```python {12} showLineNumbers
-response = sdk.process_payment({
-    'amount': 1000,  # Amount in cents
-    'currency': 'USD',
-    'method': 'credit_card',
-    'card_details': {
-        'number': '4111111111111111',
-        'expiry': '12/23',
-        'cvv': '123',
-    },
-})
+    ```python {12} showLineNumbers
+    response = sdk.process_payment({
+        'amount': 1000,  # Amount in cents
+        'currency': 'USD',
+        'method': 'credit_card',
+        'card_details': {
+            'number': '4111111111111111',
+            'expiry': '12/23',
+            'cvv': '123',
+        },
+    })
 
-print('Payment Successful:', response)
-````
-
+    print('Payment Successful:', response)
+    ```
   </TabsContent>
+  
   <TabsContent value="php">
-```php {12} showLineNumbers
-response = sdk.process_payment({
-    'amount': 1000,  # Amount in cents
-    'currency': 'USD',
-    'method': 'credit_card',
-    'card_details': {
-        'number': '4111111111111111',
-        'expiry': '12/23',
-        'cvv': '123',
-    },
-})
+    ```php {12} showLineNumbers
+    $response = $sdk->processPayment([
+        'amount' => 1000, // Amount in cents
+        'currency' => 'USD',
+        'method' => 'credit_card',
+        'card_details' => [
+            'number' => '4111111111111111',
+            'expiry' => '12/23',
+            'cvv' => '123',
+        ],
+    ]);
 
-print('Payment Successful:', response)
-```
+    echo 'Payment Successful: ' . json_encode($response);
+    ```
   </TabsContent>
 </Tabs>
+
 
 ## Conclusion
 
