@@ -58,13 +58,15 @@ Feel free to use blockquotes to highlight important information or quotes releva
 
 ## Code Examples with switch
 
+Here a custom tab component from shadcn ui is used.
+
 <Tabs defaultValue="js" className="pt-5 pb-1">
   <TabsList className="">
-    <TabsTrigger value="python">config.py</TabsTrigger>
-    <TabsTrigger value="php">config.php</TabsTrigger>
+    <TabsTrigger value="pyhton">Python</TabsTrigger>
+    <TabsTrigger value="php">PHP</TabsTrigger>
   </TabsList>
   <TabsContent value="python">
-```python {12} showLineNumbers
+  ```python {12} showLineNumbers
 response = sdk.process_payment({
     'amount': 1000,  # Amount in cents
     'currency': 'USD',
@@ -80,7 +82,7 @@ print('Payment Successful:', response)
 ````
   </TabsContent>
   <TabsContent value="php">
-```php {12} showLineNumbers
+```tsx {12} showLineNumbers
 response = sdk.process_payment({
     'amount': 1000,  # Amount in cents
     'currency': 'USD',
