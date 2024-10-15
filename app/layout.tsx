@@ -7,10 +7,10 @@ import { Footer } from "@/components/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Exsited SDK",
+  title: "AriaDocs - Template",
   metadataBase: new URL("https://ariadocs.vercel.app/"),
   description:
-    "Leading payment processing platform. That's simple to use and easy to customize.",
+    "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements.",
 };
 
 export default function RootLayout({
