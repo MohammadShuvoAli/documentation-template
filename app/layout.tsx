@@ -8,9 +8,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Exsited SDK",
-  metadataBase: new URL("https://ariadocs.vercel.app/"),
+  metadataBase: new URL("https://help.exsited.com/"),
   description:
-    "This comprehensive documentation of Exsited SDK.",
+    "Comprehensive documentation of Exsited SDK.",
 };
 
 export default function RootLayout({
