@@ -18,7 +18,7 @@ export default function Home() {
         Exsited SDK
       </h1>
       <p className="mb-8 sm:text-xl max-w-[800px] text-muted-foreground">
-        Leading payment processing platform. That's simple to use and easy to customize.
+        Leading payment processing platform. That&apos;s simple to use and easy to customize.
       </p>
       <div className="flex flex-row items-center gap-5">
         <Link
