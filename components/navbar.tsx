@@ -7,6 +7,8 @@ import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
 import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
+import ExsitedLogoPNG from '../app/logo.png'; 
+import ExsitedLogoSVG from '../app/exsited-logo.svg'; 
 
 export const NAVLINKS = [
   {
@@ -27,7 +29,7 @@ export const NAVLINKS = [
   },
   {
     title: "Community",
-    href: "https://github.com/nisabmohd/Aria-Docs/discussions",
+    href: "https://github.com/exsited/exsited-python",
   },
 ];
 
@@ -52,7 +54,7 @@ export function Navbar() {
             <Search />
             <div className="flex ml-2.5 sm:ml-0">
               <Link
-                href="https://github.com/nisabmohd/NexDocs"
+                href="https://github.com/exsited/exsited-python"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
                 <GithubIcon className="h-[1.1rem] w-[1.1rem]" />
@@ -78,8 +80,13 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5">
-      {/* <CommandIcon className="w-6 h-6 text-muted-foreground" strokeWidth={2} /> */}
-      <h2 className="text-md font-bold font-code">Exsited SDK</h2>
+      <img
+        src={ExsitedLogoSVG.src}
+        alt="Exsited Logo"
+        style={{ width: '130px', height: '24px' }} // Adjust values as needed
+      />
+      {/* Optionally, you can keep the text or remove it */}
+      {/* <h2 className="text-md font-bold font-code">Exsited SDK</h2> */}
     </Link>
   );
 }
